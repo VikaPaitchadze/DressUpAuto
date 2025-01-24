@@ -104,11 +104,12 @@ public class SauceSteps {
 
 
     @When("the user clicks on the {string} button")
-    public void theUserClicksOnTheButton(String auto) {
+    public void theUserClicksOnTheButton(String auto) throws InterruptedException {
 
         WebElement button = Hooks.driver.findElement(By.xpath("//div[@id='header-sign-in']"));
 
         button.click();
+        Thread.sleep(3000);
     }
 
     @And("the user enters {string} in the email field and {string} in the password field")
