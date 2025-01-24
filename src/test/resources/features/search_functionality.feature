@@ -24,7 +24,7 @@ Feature: Search functionality
 
   Scenario:Scenario: Log in, search for a product and add it to the wishlists
     When the user clicks on the "ავტორიზაცია" button
-    And the user enters "jicega9901@suggets.com" in the email field and "account2025" in the password field
+    And the user enters "xewovi7716@kurbieh.com" in the email field and "account2026" in the password field
     And clicks the Authorization button
     When the user enters "Gant - Terry Cloth Piqué Polo Shirt" in the search field
     And the user clicks the search button
@@ -37,7 +37,7 @@ Feature: Search functionality
     When the user enters "Gant - Terry Cloth Piqué Polo Shirt" in the search field
     And the user clicks the search button
     Then Quick see the "Gant - Terry Cloth Piqué Polo Shirt" product
-  
+
 
 
 

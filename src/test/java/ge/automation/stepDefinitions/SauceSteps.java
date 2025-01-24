@@ -82,6 +82,7 @@ public class SauceSteps {
         WebElement wishlistButton = Hooks.driver.findElement(By.xpath("(//a[@class='btn-iqitwishlist-add js-iqitwishlist-add'])[1]"));
         wishlistButton.click();
         Thread.sleep(10000);
+
     }
 
     @Then("the user should see a login prompt with {string} button displayed")
@@ -131,6 +132,7 @@ public class SauceSteps {
     public void userAddsTheToTheWishlist(String addWishlist) {
         WebElement wishlistButton = Hooks.driver.findElement(By.xpath("//*[@id=\"custuomer-auth-dropdown\"]/div/div[3]/div[4]/form/button"));
         wishlistButton.click();
+
     }
 
 
@@ -140,6 +142,7 @@ public class SauceSteps {
         WebElement quickSeeProduct = Hooks.driver.findElement(By.xpath("(//a[contains(@class,'js-quick-view-iqit')])[1]"));
         quickSeeProduct.click();
         Thread.sleep(10000);
+
     }
 
 }

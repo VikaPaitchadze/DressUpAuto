@@ -12,6 +12,7 @@ public class Hooks {
     public static void setup() {
         logger.info("Initializing WebDriver"); // ლოგირება პროცესის დაწყებისას
         try {
+
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.manage().window().maximize();
